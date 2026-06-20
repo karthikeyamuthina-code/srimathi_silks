@@ -185,15 +185,11 @@ const Navbar = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   
   const navigate = useNavigate();
-  // ✅ STEP 2: Get user and logout from context
   const { cart, wishlist, removeFromCart, updateQuantity, user, logout } = useShop();
   
-  // ✅ STEP 3: Remove isLoggedIn state - use user directly
-
   const allProducts = ["Saree", "Silk Saree", "Banarasi Saree", "Kanjeevaram Saree", "Organza Saree", "Lehenga", "Kurta", "Dupatta", "Blouse", "Jewellery", "Party Wear"];
   const searchPhrases = ["What's trending for Mehendi?", "Search for Banarasi Sarees...", "Latest Bridal Lehengas...", "Designer Kurtas for Men..."];
 
-  // ✅ Function to handle dropdown link click - navigates with URL parameter
   const handleDropdownClick = (item, linkPath) => {
     if (item.category) {
       navigate(`${linkPath}?category=${encodeURIComponent(item.category)}`);
@@ -229,8 +225,6 @@ const Navbar = () => {
     }
     return () => clearTimeout(timer);
   }, [charIndex, isDeleting, typingIndex, searchOpen]);
-
-  // ✅ STEP 1: REMOVE old useEffect that reads localStorage - not needed anymore
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -271,18 +265,14 @@ const Navbar = () => {
     }
   };
 
-  // ✅ STEP 5: Updated logout function using context logout
   const handleLogout = () => {
-    logout(); // ✅ context logout
+    logout(); 
     setShowUserMenu(false);
     navigate("/");
   };
 
   const subtotal = cart.reduce((sum, item) => sum + (item.price * (item.qty || 1)), 0);
   const totalItems = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
-  const freeShippingThreshold = 999;
-  const amountToFreeShipping = freeShippingThreshold - subtotal;
-  const shippingProgress = Math.min((subtotal / freeShippingThreshold) * 100, 100);
 
   const trendingSearches = ["Kanjeevaram Silk", "Designer Kurtas", "Bridal Lehenga", "Organza Saree"];
 
@@ -294,16 +284,17 @@ const Navbar = () => {
           <div className="bg-primary text-white">
             <div className="container flex justify-between items-center py-2 px-4">
               <div className="flex items-center gap-6">
-                <a href="mailto:hello@llmshop.com" className="flex items-center gap-1.5 text-xs hover:text-orange-100 transition-colors">
-                  <Mail className="w-3 h-3" /> hello@llmshop.com
+                {/* MODIFIED: Updated email link href and text display */}
+                <a href="mailto:srimatisilks@gmail.com" className="flex items-center gap-1.5 text-xs hover:text-white/80 transition-colors">
+                  <Mail className="w-3 h-3" /> srimatisilks@gmail.com
                 </a>
-                <a href="tel:+919885222227" className="hidden sm:flex items-center gap-1.5 text-xs hover:text-orange-100 transition-colors">
+                <a href="tel:+919885222227" className="hidden sm:flex items-center gap-1.5 text-xs hover:text-white/80 transition-colors">
                   <Phone className="w-3 h-3" /> +91 98852 22227
                 </a>
               </div>
               <div className="hidden md:flex items-center gap-6 text-xs">
-                <Link to="/track-order" className="flex items-center gap-1.5 hover:text-orange-100 transition-colors">Track Order</Link>
-                <Link to="/store-locator" className="flex items-center gap-1.5 hover:text-orange-100 transition-colors">Store Locator</Link>
+                <Link to="/track-order" className="flex items-center gap-1.5 hover:text-white/80 transition-colors">Track Order</Link>
+                <Link to="/store-locator" className="flex items-center gap-1.5 hover:text-white/80 transition-colors">Store Locator</Link>
               </div>
             </div>
           </div>
@@ -313,7 +304,7 @@ const Navbar = () => {
           <div className="container flex items-center justify-between h-20">
             
             <Link to="/" className="flex items-center">
-              <img src="/logo.png" alt="LM Shop" className="h-14 object-contain" />
+              <img src="/srimathi-logo.jpg.jpeg" alt="Srimathi Silks" className="h-16 w-auto object-contain rounded-md" />
             </Link>
 
             <ul className="hidden lg:flex items-center h-full">
@@ -345,7 +336,7 @@ const Navbar = () => {
                                             item.badge.includes('Hot') || item.badge.includes('🔥') ? 'bg-red-100 text-red-700' :
                                             item.badge.includes('Trending') || item.badge.includes('📈') ? 'bg-blue-100 text-blue-700' :
                                             item.badge.includes('Premium') || item.badge.includes('⭐') ? 'bg-purple-100 text-purple-700' :
-                                            item.badge.includes('OFF') || item.badge.includes('💰') ? 'bg-orange-100 text-orange-700' :
+                                            item.badge.includes('OFF') || item.badge.includes('💰') ? 'bg-primary/10 text-primary' :
                                             'bg-gray-100 text-gray-700'
                                           }`}>
                                             {item.badge}
@@ -374,7 +365,7 @@ const Navbar = () => {
                         </div>
                       </div>
                       <div className="bg-gray-50 px-6 py-2.5 border-t border-gray-100 flex items-center justify-between">
-                        <Link to={link.path} className="text-xs font-semibold text-primary hover:text-orange-600 transition-colors flex items-center gap-1" onClick={() => setActiveDropdown(null)}>
+                        <Link to={link.path} className="text-xs font-semibold text-primary hover:opacity-80 transition-opacity flex items-center gap-1" onClick={() => setActiveDropdown(null)}>
                           View All {link.label} →
                         </Link>
                         <span className="text-[10px] text-gray-400 flex items-center gap-1">
@@ -388,11 +379,10 @@ const Navbar = () => {
             </ul>
 
             <div className="flex items-center gap-2">
-              <button onClick={() => setSearchOpen(!searchOpen)} className="p-2 text-gray-600 hover:text-primary hover:bg-orange-50 rounded-full transition-all duration-200">
+              <button onClick={() => setSearchOpen(!searchOpen)} className="p-2 text-gray-600 hover:text-primary hover:bg-primary/5 rounded-full transition-all duration-200">
                 <Search className="w-5 h-5" />
               </button>
               
-              {/* ✅ STEP 3: Use 'user' instead of 'isLoggedIn' */}
               <div 
                 className="relative hidden sm:flex" 
                 onMouseEnter={() => user && setShowUserMenu(true)} 
@@ -400,17 +390,15 @@ const Navbar = () => {
               >
                 <button 
                   onClick={handleUserIconClick} 
-                  className="p-2 text-gray-600 hover:text-primary hover:bg-orange-50 rounded-full transition-all duration-200 relative cursor-pointer"
+                  className="p-2 text-gray-600 hover:text-primary hover:bg-primary/5 rounded-full transition-all duration-200 relative cursor-pointer"
                 >
                   <User className="w-5 h-5" />
                   {user && <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-green-500 rounded-full border-2 border-white"></span>}
                 </button>
 
-                {/* ✅ STEP 3: Use 'user' instead of 'isLoggedIn' */}
                 {user && showUserMenu && (
                   <div className="absolute right-0 top-full pt-2 w-56 z-[100]">
                     <div className="bg-white shadow-[0_4px_16px_rgba(0,0,0,0.1)] border border-gray-100 py-3 rounded-sm animate-in fade-in zoom-in-95 duration-200">
-                      {/* ✅ STEP 4: Use user?.name */}
                       <p className="px-5 mb-3 text-[15px] font-medium text-gray-800 tracking-wide">
                         Welcome {user?.name?.split(' ')[0] || "User"}!
                       </p>
@@ -433,12 +421,12 @@ const Navbar = () => {
                 )}
               </div>
               
-              <Link to="/profile?tab=wishlist" className="hidden sm:flex p-2 text-gray-600 hover:text-primary hover:bg-orange-50 rounded-full transition-all duration-200 relative">
+              <Link to="/profile?tab=wishlist" className="hidden sm:flex p-2 text-gray-600 hover:text-primary hover:bg-primary/5 rounded-full transition-all duration-200 relative">
                 <Heart className="w-5 h-5" />
                 {wishlist.length > 0 && <span className="absolute -top-0.5 -right-0.5 bg-primary text-white text-[10px] min-w-[18px] h-[18px] rounded-full flex items-center justify-center font-bold shadow-md">{wishlist.length}</span>}
               </Link>
               
-              <button onClick={() => { if(user) setIsCartOpen(true); else navigate("/account"); }} className="p-2 text-gray-600 hover:text-primary hover:bg-orange-50 rounded-full transition-all duration-200 relative">
+              <button onClick={() => { if(user) setIsCartOpen(true); else navigate("/account"); }} className="p-2 text-gray-600 hover:text-primary hover:bg-primary/5 rounded-full transition-all duration-200 relative">
                 <ShoppingCart className="w-5 h-5" /> 
                 {cart.length > 0 && <span className="absolute -top-0.5 -right-0.5 bg-primary text-white text-[10px] min-w-[18px] h-[18px] rounded-full flex items-center justify-center font-bold shadow-md">{totalItems}</span>}
               </button>
@@ -481,7 +469,7 @@ const Navbar = () => {
                     {suggestions.map((item, index) => (
                       <div
                         key={index}
-                        className="px-4 py-2.5 hover:bg-orange-50 cursor-pointer transition-colors flex items-center gap-3 border-b border-gray-50 last:border-0"
+                        className="px-4 py-2.5 hover:bg-primary/5 cursor-pointer transition-colors flex items-center gap-3 border-b border-gray-50 last:border-0"
                         onClick={() => handleSearchSubmit(item)}
                       >
                         <Search className="w-3.5 h-3.5 text-gray-400" />
@@ -495,7 +483,7 @@ const Navbar = () => {
                   <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider">Trending:</p>
                   <div className="flex flex-wrap gap-2">
                     {trendingSearches.map((term) => (
-                      <button key={term} onClick={() => handleSearchSubmit(term)} className="px-3 py-1 bg-gray-50 hover:bg-orange-50 hover:text-primary text-xs text-gray-600 rounded-sm transition-colors border border-gray-100">
+                      <button key={term} onClick={() => handleSearchSubmit(term)} className="px-3 py-1 bg-gray-50 hover:bg-primary/5 hover:text-primary text-xs text-gray-600 rounded-sm transition-colors border border-gray-100">
                         {term}
                       </button>
                     ))}
@@ -545,7 +533,7 @@ const Navbar = () => {
             <div className="flex justify-between font-bold text-lg mb-4">
               <span>Total:</span> <span>₹{subtotal.toLocaleString("en-IN")}</span>
             </div>
-            <button onClick={() => { setIsCartOpen(false); navigate("/checkout"); }} className="w-full bg-primary text-white py-3 font-bold rounded-full hover:bg-primary/90 transition">
+            <button onClick={() => { setIsCartOpen(false); navigate("/checkout"); }} className="w-full bg-primary text-white py-3 font-bold rounded-full hover:bg-primary/90 transition-all duration-200">
               Proceed to Checkout
             </button>
           </div>
@@ -558,7 +546,7 @@ const Navbar = () => {
           <div className="fixed inset-0 bg-black/50 z-[40]" onClick={() => setMobileOpen(false)} />
           <div className="fixed top-0 left-0 w-4/5 max-w-sm h-full bg-white z-[50] shadow-xl overflow-y-auto">
             <div className="p-4 border-b flex justify-between items-center">
-              <img src="/logo.png" alt="LM Shop" className="h-8" />
+              <img src="/srimathi-logo.jpg.jpeg" alt="Srimathi Silks" className="h-10 w-auto object-contain" />
               <button onClick={() => setMobileOpen(false)}><X className="w-5 h-5" /></button>
             </div>
             <div className="p-4">

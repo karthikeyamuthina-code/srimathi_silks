@@ -15,7 +15,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 20 10% 15%;
 
-    --primary: 28 85% 52%;
+    /* CHANGED: Swapped bright orange for the elegant deep plum purple background color of the logo */
+    --primary: 310 65% 22%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 36 30% 92%;
@@ -32,14 +33,18 @@
 
     --border: 30 20% 88%;
     --input: 30 20% 88%;
-    --ring: 28 85% 52%;
+    
+    /* CHANGED: Match the interactive focus rings to your brand's new purple color */
+    --ring: 310 65% 22%;
 
     --radius: 0.5rem;
 
     --gold: 45 80% 55%;
     --cream: 36 33% 97%;
     --warm-brown: 20 30% 30%;
-    --terracotta: 15 60% 50%;
+    
+    /* CHANGED: Swapped terracotta orange for a deeper purple/shadow tone */
+    --terracotta: 310 65% 15%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
