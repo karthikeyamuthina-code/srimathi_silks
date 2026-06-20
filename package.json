@@ -1,7 +1,8 @@
 ﻿{
-  "name": "Srimathi Silks",
-  "version": "0.1.0",
+  "name": "srimathi silks",
   "private": true,
+  "version": "0.1.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -44,4 +45,3 @@
     "vite": "^5.0.0"
   }
 }
-
