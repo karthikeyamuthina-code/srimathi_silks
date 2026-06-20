@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+﻿import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { 
   ArrowRight, ArrowLeft, Mail, Lock, Eye, EyeOff, Sparkles, 
@@ -222,7 +222,7 @@ const SignIn = () => {
 
         <div className="hidden lg:flex absolute top-10 left-10 z-30">
           <Link to="/" className="font-heading text-3xl font-bold text-white tracking-widest flex items-center gap-2 hover:text-primary transition-colors">
-            LM <span className="text-primary italic">Showroom</span>
+            LM <span className="text-primary italic">Srimathi Silks </span>
           </Link>
         </div>
 
@@ -244,7 +244,7 @@ const SignIn = () => {
         
         <div className="lg:hidden text-center mb-6 sm:mb-8">
           <Link to="/" className="font-heading text-2xl sm:text-3xl font-bold text-stone-800 tracking-widest">
-            LLM <span className="text-primary italic">Showroom</span>
+            Srimathi Silks <span className="text-primary italic">Srimathi Silks</span>
           </Link>
         </div>
 
@@ -422,7 +422,7 @@ const SignIn = () => {
 
           <div className="mt-5 sm:mt-6 text-center">
             <p className="font-body text-xs sm:text-sm text-stone-500">
-              New to LM Showroom? 
+              New to Srimathi Silks? 
               <Link to="/register" className="text-primary font-medium hover:text-primary/80 transition-colors ml-1.5 sm:ml-2 border-b-2 border-primary/30 hover:border-primary pb-0.5">
                 Create Account
               </Link>

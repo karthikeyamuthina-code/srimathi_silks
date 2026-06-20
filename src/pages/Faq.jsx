@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+﻿import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { 
   Plus, Minus, Send, Sparkles, Search, HelpCircle, 
@@ -347,7 +347,7 @@ const Faq = () => {
                 </Link>
                 
                 <a 
-                  href="tel:+919876543210" 
+                  href="tel:+91 99999 99999" 
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-stone-700 px-8 py-4 rounded-full font-medium border border-stone-200 hover:border-primary hover:text-primary transition-all"
                 >
                   <Phone className="w-5 h-5" />
@@ -355,7 +355,7 @@ const Faq = () => {
                 </a>
                 
                 <a 
-                  href="mailto:support@llmshop.com" 
+                  href="mailto:support@srimathisilks.com" 
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-stone-700 px-8 py-4 rounded-full font-medium border border-stone-200 hover:border-primary hover:text-primary transition-all"
                 >
                   <Mail className="w-5 h-5" />

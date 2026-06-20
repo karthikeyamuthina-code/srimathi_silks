@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+﻿import React, { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { 
   ShoppingCart, Heart, Star, Truck, RefreshCcw, Minus, Plus, 
@@ -94,16 +94,16 @@ const ProductDetail = () => {
       setProduct(foundProduct); 
       setSelectedColor(foundProduct.colors?.[0] || null);
       // Add to recently viewed
-      const stored = localStorage.getItem("llmshop_recently_viewed");
+      const stored = localStorage.getItem("Srimathi Silksp_recently_viewed");
       const viewed = stored ? JSON.parse(stored) : [];
       const updated = [foundProduct, ...viewed.filter(p => p.id !== foundProduct.id)].slice(0, 8);
-      localStorage.setItem("llmshop_recently_viewed", JSON.stringify(updated));
+      localStorage.setItem("Srimathi Silksp_recently_viewed", JSON.stringify(updated));
     }
     window.scrollTo(0, 0);
   }, [id]);
 
   useEffect(() => {
-    const stored = localStorage.getItem("llmshop_recently_viewed");
+    const stored = localStorage.getItem("Srimathi Silksp_recently_viewed");
     if (stored) setRecentlyViewed(JSON.parse(stored));
   }, []);
 
@@ -224,7 +224,7 @@ const ProductDetail = () => {
                 <span className="text-xs text-gray-400 uppercase tracking-widest">History</span>
                 <h3 className="text-xl font-semibold text-black">Recently Viewed</h3>
               </div>
-              <button onClick={() => { setRecentlyViewed([]); localStorage.removeItem("llmshop_recently_viewed"); }} className="text-xs text-gray-400 hover:text-red-500">Clear</button>
+              <button onClick={() => { setRecentlyViewed([]); localStorage.removeItem("Srimathi Silksp_recently_viewed"); }} className="text-xs text-gray-400 hover:text-red-500">Clear</button>
             </div>
             <div className="flex gap-4 overflow-x-auto scrollbar-hide">
               {recentlyViewed.filter(p => p.id !== product.id).slice(0, 6).map((p) => (

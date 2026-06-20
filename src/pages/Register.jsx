@@ -155,7 +155,7 @@ const Register = () => {
         {/* Logo - desktop only */}
         <div className="hidden lg:flex absolute top-10 right-10 z-30">
           <Link to="/" className="font-heading text-3xl font-bold text-white tracking-widest flex items-center gap-2 hover:text-primary transition-colors">
-            LM <span className="text-primary italic">Showroom</span>
+            LM <span className="text-primary italic">Srimathi Silks </span>
           </Link>
         </div>
 
@@ -181,7 +181,7 @@ const Register = () => {
         {/* Logo - mobile only */}
         <div className="lg:hidden text-center mb-6 sm:mb-8">
           <Link to="/" className="font-heading text-2xl sm:text-3xl font-bold text-stone-800 tracking-widest">
-            LLM <span className="text-primary italic">Showroom</span>
+            Srimathi Silks <span className="text-primary italic">Srimathi Silks </span>
           </Link>
         </div>
 

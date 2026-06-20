@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+﻿import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { 
   ChevronRight, Sparkles, Award, Users, ShoppingBag, Heart, 
@@ -88,7 +88,7 @@ const About = () => {
       image: "https://i.pinimg.com/736x/8e/1f/38/8e1f38a2c226f46854a9f6921eea450c.jpg"
     },
     { 
-      text: "LM Showroom has the finest collection of handloom fabrics. Their customer service is exceptional!", 
+      text: "Srimathi Silkshas the finest collection of handloom fabrics. Their customer service is exceptional!", 
       name: "Priya Menon", 
       location: "Chennai",
       rating: 5,
@@ -108,7 +108,7 @@ const About = () => {
     { year: "1985", title: "Founded", desc: "Started as a small weaving unit in Nellore" },
     { year: "1995", title: "First Showroom", desc: "Opened our flagship store on Kapu Street" },
     { year: "2005", title: "Artisan Network", desc: "Partnered with 100+ rural weavers" },
-    { year: "2015", title: "Digital Presence", desc: "Launched LM Showroom online" },
+    { year: "2015", title: "Digital Presence", desc: "Launched Srimathi Silks online" },
     { year: "2025", title: "Global Reach", desc: "Shipping to 20+ countries worldwide" }
   ];
 
@@ -193,7 +193,7 @@ const About = () => {
               <span className="text-primary italic">Creating Heirlooms</span>
             </h1>
             <p className="text-cream/70 text-base max-w-2xl mx-auto mt-3">
-              Discover the legacy behind LM Showroom - where every saree tells a story of heritage, craftsmanship, and love
+              Discover the legacy behind Srimathi Silks - where every saree tells a story of heritage, craftsmanship, and love
             </p>
           </div>
         </div>
@@ -254,7 +254,7 @@ const About = () => {
             <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full"></div>
             <p className="text-stone-600 text-sm leading-relaxed">
               Nestled in the heart of Andhra Pradesh, by the line of Kapu Street in Nellore,{' '}
-              <strong className="text-stone-800">LM Showroom</strong> stands as a beacon of 
+              <strong className="text-stone-800">Srimathi Silks</strong> stands as a beacon of 
               rich Indian textiles and handcrafted perfection.
             </p>
             <p className="text-stone-600 text-sm leading-relaxed">
@@ -321,7 +321,7 @@ const About = () => {
             <span className="text-primary text-xs uppercase tracking-[0.3em] font-medium">What We Stand For</span>
             <h3 className="font-heading text-2xl text-stone-800 mt-1">Our Core Values</h3>
             <p className="text-stone-500 max-w-2xl mx-auto mt-1 text-sm">
-              The principles that guide everything we do at LM Showroom
+              The principles that guide everything we do at Srimathi Silks
             </p>
           </div>
           
@@ -475,7 +475,7 @@ const About = () => {
             </div>
             <div className="flex items-center gap-2 text-stone-600 text-sm">
               <Phone className="w-4 h-4 text-primary" />
-              <span>+91 98765 43210</span>
+              <span>+91 99999 99999 </span>
             </div>
             <div className="flex items-center gap-2 text-stone-600 text-sm">
               <Clock className="w-4 h-4 text-primary" />

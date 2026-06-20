@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+﻿import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { 
   Filter, Heart, ShoppingCart, Star, Eye, ChevronDown, 
@@ -45,7 +45,7 @@ const Kurtas = () => {
   const { addToCart, toggleWishlist, wishlist, cart } = useShop();
 
   useEffect(() => {
-    const stored = localStorage.getItem("llmshop_recently_viewed");
+    const stored = localStorage.getItem("Srimathi Silksp_recently_viewed");
     if (stored) setRecentlyViewed(JSON.parse(stored));
   }, []);
 
@@ -84,7 +84,7 @@ const Kurtas = () => {
   const addToRecentlyViewed = (product) => {
     const updated = [product, ...recentlyViewed.filter(p => p.id !== product.id)].slice(0, 6);
     setRecentlyViewed(updated);
-    localStorage.setItem("llmshop_recently_viewed", JSON.stringify(updated));
+    localStorage.setItem("Srimathi Silksp_recently_viewed", JSON.stringify(updated));
   };
 
   const getDiscountedPrice = (price, oldPrice) => !oldPrice ? null : Math.round(((oldPrice - price) / oldPrice) * 100);
@@ -264,7 +264,7 @@ const Kurtas = () => {
                   <div className="mt-10 pt-6 border-t-2 border-stone-100 mb-6">
                     <div className="flex items-center justify-between mb-5">
                       <div><span className="text-primary text-xs uppercase tracking-[0.3em] font-semibold">History</span><h3 className="font-heading text-2xl text-stone-800 mt-1">Recently Viewed</h3></div>
-                      <button onClick={() => { setRecentlyViewed([]); localStorage.removeItem("llmshop_recently_viewed"); }} className="text-xs text-stone-400 hover:text-red-500">Clear</button>
+                      <button onClick={() => { setRecentlyViewed([]); localStorage.removeItem("Srimathi Silksp_recently_viewed"); }} className="text-xs text-stone-400 hover:text-red-500">Clear</button>
                     </div>
                     <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
                       {recentlyViewed.map((p) => (

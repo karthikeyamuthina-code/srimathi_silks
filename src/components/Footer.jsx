@@ -1,5 +1,6 @@
+﻿import React from "react";
 import { Instagram, Facebook, Youtube, Twitter } from "lucide-react";
-import { Link } from "react-router-dom"; // <-- NAYA IMPORT
+import { Link } from "react-router-dom"; 
 
 // Links Data Mapping
 const accountLinks = [
@@ -10,10 +11,11 @@ const accountLinks = [
 ];
 
 const infoLinks = [
-  { label: "About Us", path: "/about" },
+  /* CHANGED HERE: Replaced "About Us" with "Customer Reviews" pointing down to /reviews */
+  { label: "Customer Reviews", path: "/reviews" },
   { label: "Shipping Policy", path: "/faq" },
   { label: "Returns & Refunds", path: "/faq" },
-  { label: "Privacy Policy", path: "/faq" } // <-- YAHAN PATH CHANGE KIYA HAI (/about se /faq)
+  { label: "Privacy Policy", path: "/faq" } 
 ];
 
 const supportLinks = [
@@ -64,11 +66,11 @@ const Footer = () => (
           </ul>
         </div>
 
-        {/* Contact Us (Updated with Real Details) */}
+        {/* Contact Us */}
         <div>
           <h4 className="font-heading text-primary-foreground font-semibold mb-4">Contact Us</h4>
           <p className="text-sm mb-2 hover:text-primary transition-colors">
-            <a href="mailto:hello@llmshop.com">hello@llmshop.com</a>
+            <a href="mailto:srimathisilks@gmail.com">srimathisilks@gmail.com</a>
           </p>
           <p className="text-sm mb-4 hover:text-primary transition-colors">
             <a href="tel:+919885222227">+91 98852 22227</a>
@@ -78,8 +80,8 @@ const Footer = () => (
             <a href="#" target="_blank" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
               <Instagram className="w-4 h-4" />
             </a>
-            {/* Facebook (Real Link) */}
-            <a href="https://www.facebook.com/lmshowroomatnellore/" target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
+            {/* Facebook */}
+            <a href="https://www.facebook.com/LMSrimathi Silksatnellore/" target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
               <Facebook className="w-4 h-4" />
             </a>
             {/* Youtube */}
@@ -95,7 +97,7 @@ const Footer = () => (
       </div>
       
       <div className="border-t border-primary-foreground/10 pt-6 text-center text-xs text-primary-foreground/50">
-        © 2026 LM Showroom (LM Shop). All rights reserved.
+        © 2026 Srimathi Silks. All rights reserved.
       </div>
     </div>
   </footer>

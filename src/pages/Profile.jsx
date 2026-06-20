@@ -90,7 +90,7 @@ const Profile = () => {
         const demoUser = {
           name: "Priya Sharma",
           email: rememberedEmail,
-          phone: "+91 98852 22227",
+          phone: "+9199999 99999",
           address: "123, Fashion Street",
           city: "Mumbai",
           state: "Maharashtra",
@@ -162,8 +162,8 @@ const Profile = () => {
   ]);
 
   const [savedAddresses, setSavedAddresses] = useState([
-    { id: 1, type: "Home", name: "Priya Sharma", address: "123, Fashion Street, Bandra West", city: "Mumbai", state: "Maharashtra", pincode: "400001", phone: "+91 98852 22227", isDefault: true },
-    { id: 2, type: "Office", name: "Priya Sharma", address: "456, Corporate Park, BKC", city: "Mumbai", state: "Maharashtra", pincode: "400051", phone: "+91 98852 22227", isDefault: false },
+    { id: 1, type: "Home", name: "Priya Sharma", address: "123, Fashion Street, Bandra West", city: "Mumbai", state: "Maharashtra", pincode: "400001", phone: " +91 99999 99999", isDefault: true },
+    { id: 2, type: "Office", name: "Priya Sharma", address: "456, Corporate Park, BKC", city: "Mumbai", state: "Maharashtra", pincode: "400051", phone: "+91 99999 99999", isDefault: false },
   ]);
 
   const handleAddAddress = () => {

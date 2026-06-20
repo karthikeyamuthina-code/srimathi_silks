@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+﻿import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { 
   X, Sparkles, Mail, Phone, Lock, Key, ArrowRight, 
@@ -249,7 +249,7 @@ const VideoPopup = () => {
 
             <div className="absolute top-6 left-6 z-20">
               <span className="font-heading text-2xl font-bold text-white tracking-wider">
-                LM <span className="text-primary italic">Showroom</span>
+                LM <span className="text-primary italic">Srimathi Silks </span>
               </span>
             </div>
           </div>
@@ -411,7 +411,7 @@ const VideoPopup = () => {
 
             {/* Register Link */}
             <p className="text-center text-xs text-stone-500 mt-4">
-              New to LM Showroom?{' '}
+              New to Srimathi Silks?{' '}
               <Link to="/register" className="text-primary hover:underline font-medium" onClick={() => setIsOpen(false)}>
                 Create an account
               </Link>

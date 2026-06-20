@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+﻿import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { 
   MapPin, Phone, Mail, Facebook, Send, CheckCircle2, Instagram,
@@ -53,24 +53,24 @@ const Contact = () => {
     { 
       icon: Phone, 
       title: "Call Us", 
-      value: "+91 98852 22227", 
-      link: "tel:+919885222227",
+      value: "+91 9999 9999 ", 
+      link: "tel:+91 99999 99999",
       color: "from-blue-500 to-cyan-600",
       desc: "24/7 Customer Support"
     },
     { 
       icon: Mail, 
       title: "Email Us", 
-      value: "hello@llmshop.com", 
-      link: "mailto:hello@llmshop.com",
+      value: "srimathisilks@srimathisilks.com", 
+      link: "mailto:srimathisilks@srimathisilks.com",
       color: "from-purple-500 to-indigo-600",
       desc: "Response within 2 hours"
     },
     { 
       icon: MessageCircle, 
       title: "WhatsApp", 
-      value: "+91 98852 22227", 
-      link: "https://wa.me/919885222227",
+      value: "+91 99999 99999", 
+      link: "https://wa.me/919999999999",
       color: "from-green-500 to-emerald-600",
       desc: "Chat with us instantly"
     }
@@ -86,11 +86,11 @@ const Contact = () => {
 
   // Social links
   const socialLinks = [
-    { icon: Facebook, link: "https://www.facebook.com/lmshowroomatnellore/", color: "bg-[#1877F2] hover:bg-[#1877F2]/90" },
-    { icon: Instagram, link: "https://instagram.com/llmshowroom", color: "bg-gradient-to-br from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700" },
-    { icon: Twitter, link: "https://twitter.com/llmshowroom", color: "bg-[#1DA1F2] hover:bg-[#1DA1F2]/90" },
-    { icon: Youtube, link: "https://youtube.com/llmshowroom", color: "bg-[#FF0000] hover:bg-[#FF0000]/90" },
-    { icon: Linkedin, link: "https://linkedin.com/company/llmshowroom", color: "bg-[#0A66C2] hover:bg-[#0A66C2]/90" }
+    { icon: Facebook, link: "https://www.facebook.com/LMSrimathi Silksatnellore/", color: "bg-[#1877F2] hover:bg-[#1877F2]/90" },
+    { icon: Instagram, link: "https://instagram.com/Srimathi Silks", color: "bg-gradient-to-br from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700" },
+    { icon: Twitter, link: "https://twitter.com/Srimathi Silks", color: "bg-[#1DA1F2] hover:bg-[#1DA1F2]/90" },
+    { icon: Youtube, link: "https://youtube.com/Srimathi Silks", color: "bg-[#FF0000] hover:bg-[#FF0000]/90" },
+    { icon: Linkedin, link: "https://linkedin.com/company/Srimathi Silks", color: "bg-[#0A66C2] hover:bg-[#0A66C2]/90" }
   ];
 
   return (
@@ -199,7 +199,7 @@ const Contact = () => {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary mt-0.5" />
                   <div>
-                    <h4 className="font-semibold text-stone-800">LM Showroom</h4>
+                    <h4 className="font-semibold text-stone-800">Srimathi Silks</h4>
                     <p className="text-sm text-stone-500 leading-relaxed">
                       By Line Of Kapu Street, Gaddamvari Street,<br />
                       Nellore, Andhra Pradesh 524001
@@ -452,7 +452,7 @@ const Contact = () => {
               <span className="text-stone-300">|</span>
               <div className="flex items-center gap-1 text-sm text-stone-500">
                 <Phone className="w-4 h-4" />
-                +91 98852 22227
+                +91 99999 99999
               </div>
             </div>
             
@@ -467,7 +467,7 @@ const Contact = () => {
                 Get Directions
               </a>
               <a 
-                href="tel:+919885222227"
+                href="tel:+9122227"
                 className="flex-1 bg-white text-stone-700 px-6 py-3 rounded-full text-sm font-medium border border-stone-200 hover:border-primary hover:text-primary transition-all flex items-center justify-center gap-2"
               >
                 <Phone className="w-4 h-4" />
@@ -483,7 +483,7 @@ const Contact = () => {
       {/* ======================================================= */}
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="text-primary text-sm uppercase tracking-[0.3em] font-medium">Why Choose LM Showroom</span>
+          <span className="text-primary text-sm uppercase tracking-[0.3em] font-medium">Why Choose Srimathi Silks</span>
           <h3 className="font-heading text-2xl md:text-3xl text-stone-800 mt-2 mb-8">The LM Experience</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

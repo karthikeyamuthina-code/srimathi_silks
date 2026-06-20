@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+﻿import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom"; 
 import { Filter, Heart, X, ChevronDown, Star, Search, Eye, ShoppingCart, Sparkles, TrendingUp, Flame, Play, Award, Truck, Shield, Clock, Zap, Plus, Minus, ChevronRight, ArrowRight } from "lucide-react"; 
 import { useShop } from "../ShopContext.jsx";
@@ -119,16 +119,16 @@ const Sarees = () => {
   });
 
   useEffect(() => {
-    const stored = localStorage.getItem("llmshop_recently_viewed");
+    const stored = localStorage.getItem("Srimathi Silksp_recently_viewed");
     if (stored) {
       try {
         const parsed = JSON.parse(stored);
         const fixed = parsed.map(p => ({ ...p, image: p.image || FALLBACK_IMAGE }));
         setRecentlyViewed(fixed);
-        localStorage.setItem("llmshop_recently_viewed", JSON.stringify(fixed));
+        localStorage.setItem("Srimathi Silksp_recently_viewed", JSON.stringify(fixed));
       } catch (e) {
         setRecentlyViewed([]);
-        localStorage.removeItem("llmshop_recently_viewed");
+        localStorage.removeItem("Srimathi Silksp_recently_viewed");
       }
     }
   }, []);
@@ -169,7 +169,7 @@ const Sarees = () => {
     const safeProduct = { ...product, image: product.image || FALLBACK_IMAGE };
     const updated = [safeProduct, ...recentlyViewed.filter(p => p.id !== product.id)].slice(0, 8);
     setRecentlyViewed(updated);
-    localStorage.setItem("llmshop_recently_viewed", JSON.stringify(updated));
+    localStorage.setItem("Srimathi Silksp_recently_viewed", JSON.stringify(updated));
   };
 
   const handleCategoryClick = (catName) => {
@@ -403,7 +403,7 @@ const Sarees = () => {
                   <div className="mt-10 pt-6 border-t-2 border-stone-100 mb-6">
                     <div className="flex items-center justify-between mb-5">
                       <div><span className="text-primary text-xs uppercase tracking-[0.3em] font-semibold">History</span><h3 className="font-heading text-2xl text-stone-800 mt-1">Recently Viewed</h3></div>
-                      <button onClick={() => { setRecentlyViewed([]); localStorage.removeItem("llmshop_recently_viewed"); }} className="text-xs text-stone-400 hover:text-red-500 transition-colors font-medium">Clear History</button>
+                      <button onClick={() => { setRecentlyViewed([]); localStorage.removeItem("Srimathi Silksp_recently_viewed"); }} className="text-xs text-stone-400 hover:text-red-500 transition-colors font-medium">Clear History</button>
                     </div>
                     <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
                       {recentlyViewed.slice(0, 6).map((p) => (

@@ -119,29 +119,11 @@ const navLinks = [
       featuredImage: { url: "https://in.kalkifashion.com/cdn/shop/files/250x350-desk-exclusive-collections-23-03-26.jpg?v=1774257770&width=235", title: "Limited Time Offer", subtitle: "Flat 30% OFF", link: "/offers" }
     }
   },
+  /* CHANGED: Swapped "Reviews" section with a single flat link pointing to "About Us" */
   { 
-    label: "Reviews", path: "/reviews", hasDropdown: true,
-    dropdownContent: {
-      columns:[
-        { title: "Customer Stories", links:[ 
-          { name: "Photo Reviews", path: "/reviews/photos" }, 
-          { name: "Video Testimonials", path: "/reviews/videos" }, 
-          { name: "Top Rated", path: "/reviews/top-rated", badge: "⭐ 4.8+" }, 
-          { name: "Recent Reviews", path: "/reviews/recent" } 
-        ] },
-        { title: "Shop by Rating", links:[ 
-          { name: "5 Star Products", path: "/reviews/5-star" }, 
-          { name: "4 Star & Above", path: "/reviews/4-star" }, 
-          { name: "Most Reviewed", path: "/reviews/most-reviewed" } 
-        ] },
-        { title: "Community", links:[ 
-          { name: "Style Stories", path: "/community/stories" }, 
-          { name: "Lookbook", path: "/community/lookbook" }, 
-          { name: "Share Your Style", path: "/community/share", badge: "📸 Share" } 
-        ] }
-      ],
-      featuredImage: { url: "https://in.kalkifashion.com/cdn/shop/files/250x350-desk-salwar-kameez-18-02-26.jpg?v=1771497859&width=235", title: "Customer Favorites", subtitle: "See what's trending", link: "/reviews/favorites" }
-    }
+    label: "About Us", 
+    path: "/about", 
+    hasDropdown: false 
   },
   { 
     label: "Gallery", path: "/gallery", hasDropdown: true,
@@ -284,9 +266,8 @@ const Navbar = () => {
           <div className="bg-primary text-white">
             <div className="container flex justify-between items-center py-2 px-4">
               <div className="flex items-center gap-6">
-                {/* MODIFIED: Updated email link href and text display */}
-                <a href="mailto:srimatisilks@gmail.com" className="flex items-center gap-1.5 text-xs hover:text-white/80 transition-colors">
-                  <Mail className="w-3 h-3" /> srimatisilks@gmail.com
+                <a href="mailto:srimathisilks@gmail.com" className="flex items-center gap-1.5 text-xs hover:text-white/80 transition-colors">
+                  <Mail className="w-3 h-3" /> srimathisilks@gmail.com
                 </a>
                 <a href="tel:+919885222227" className="hidden sm:flex items-center gap-1.5 text-xs hover:text-white/80 transition-colors">
                   <Phone className="w-3 h-3" /> +91 98852 22227

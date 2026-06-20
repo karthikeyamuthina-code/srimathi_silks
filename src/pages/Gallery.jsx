@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { 
   Heart, 
@@ -29,7 +29,7 @@ const galleryData = [
     likes: 1247,
     comments: 89,
     user: { name: "Priya Sharma", avatar: "https://i.pinimg.com/736x/25/09/4e/25094edff0359cada153734742efc860.jpg", verified: true },
-    caption: "Found my dream wedding saree at LM Showroom! 💕✨",
+    caption: "Found my dream wedding saree at Srimathi Silks! 💕✨",
     location: "Mumbai, India",
     tags: ["Bridal", "Silk", "Wedding"],
     products: [{ name: "Kanchipuram Silk Saree", price: 45000, link: "/product/kanchipuram-silk" }],
@@ -194,7 +194,7 @@ const Gallery = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2 rounded-full border border-white/20 mb-6"><Instagram className="w-4 h-4 text-pink-500" /><span className="text-cream text-xs uppercase tracking-[0.3em]">@LMShowroom</span></div>
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2 rounded-full border border-white/20 mb-6"><Instagram className="w-4 h-4 text-pink-500" /><span className="text-cream text-xs uppercase tracking-[0.3em]">@LMSrimathi Silks</span></div>
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-white mb-4 tracking-tight">Our <span className="text-primary italic">Lookbook</span></h1>
               <p className="font-body text-gray-200 text-sm md:text-base max-w-lg mb-6">Real customers, real style. Tag <span className="text-primary font-medium">#LMStyle</span> to be featured.</p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
@@ -266,7 +266,7 @@ const Gallery = () => {
           <div className="max-w-2xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm mb-6"><Camera className="w-4 h-4 text-primary" /><span className="text-xs uppercase tracking-wider text-stone-600">#LMStyle</span></div>
             <h3 className="font-heading text-2xl md:text-3xl text-stone-800 mb-3">Get Featured in Our Lookbook</h3>
-            <p className="text-stone-600 mb-6">Share your LM Showroom style on Instagram and tag us for a chance to be featured</p>
+            <p className="text-stone-600 mb-6">Share your Srimathi Silksstyle on Instagram and tag us for a chance to be featured</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-3.5 rounded-full font-medium hover:shadow-lg hover:shadow-pink-500/30 transition flex items-center gap-2"><Instagram className="w-4 h-4" />Share Your Look</a>
               <Link to="/shop" className="bg-white text-stone-800 px-8 py-3.5 rounded-full font-medium border border-stone-200 hover:border-primary hover:text-primary transition flex items-center gap-2 shadow-sm"><ShoppingBag className="w-4 h-4" />Shop Now</Link>

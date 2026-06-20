@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+﻿import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const ShopContext = createContext();
 export const useShop = () => useContext(ShopContext);
@@ -13,22 +13,22 @@ export const ShopProvider = ({ children }) => {
 
   // 1. PAGE LOAD HOTE HI PURANA DATA BROWSER SE NIKALNA
   const [cart, setCart] = useState(() => {
-    const savedCart = localStorage.getItem("llmShop_cart");
+    const savedCart = localStorage.getItem("Srimathi Silksp_cart");
     return savedCart ? JSON.parse(savedCart) : [];
   });
 
   const [wishlist, setWishlist] = useState(() => {
-    const savedWishlist = localStorage.getItem("llmShop_wishlist");
+    const savedWishlist = localStorage.getItem("Srimathi Silksp_wishlist");
     return savedWishlist ? JSON.parse(savedWishlist) : [];
   });
 
   // 2. JAB BHI CART MEIN KUCH ADD/REMOVE HO, USE BROWSER MEIN PERMANENT SAVE KARNA
   useEffect(() => {
-    localStorage.setItem("llmShop_cart", JSON.stringify(cart));
+    localStorage.setItem("Srimathi Silksp_cart", JSON.stringify(cart));
   }, [cart]);
 
   useEffect(() => {
-    localStorage.setItem("llmShop_wishlist", JSON.stringify(wishlist));
+    localStorage.setItem("Srimathi Silksp_wishlist", JSON.stringify(wishlist));
   }, [wishlist]);
 
   // 🔥 AUTH FUNCTIONS

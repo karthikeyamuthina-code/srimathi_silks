@@ -1,5 +1,5 @@
-{
-  "name": "llmshowroom",
+﻿{
+  "name": "Srimathi Silks",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -44,3 +44,4 @@
     "vite": "^5.0.0"
   }
 }
+
