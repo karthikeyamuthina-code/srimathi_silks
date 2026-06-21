@@ -25,7 +25,7 @@ const topPromos = [
     title: "Custom Stitching", 
     subtitle: "Perfect fit, expert tailors", 
     image: "https://i.pinimg.com/1200x/0e/cc/9e/0ecc9eb7eddb8fc2977d3465743451b2.jpg",
-    link: "/custom-stitching"
+    link: "/contact"
   },
   { 
     title: "Free Shipping", 

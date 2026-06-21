@@ -194,7 +194,7 @@ const Gallery = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2 rounded-full border border-white/20 mb-6"><Instagram className="w-4 h-4 text-pink-500" /><span className="text-cream text-xs uppercase tracking-[0.3em]">@LMSrimathi Silks</span></div>
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2 rounded-full border border-white/20 mb-6"><Instagram className="w-4 h-4 text-pink-500" /><span className="text-cream text-xs uppercase tracking-[0.3em]">@Srimathi Silks</span></div>
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-white mb-4 tracking-tight">Our <span className="text-primary italic">Lookbook</span></h1>
               <p className="font-body text-gray-200 text-sm md:text-base max-w-lg mb-6">Real customers, real style. Tag <span className="text-primary font-medium">#LMStyle</span> to be featured.</p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
@@ -234,7 +234,7 @@ const Gallery = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-3 gap-4">
           {featuredCollections.map((collection, idx) => (
-            <Link key={idx} to={`/collection/${collection.name.toLowerCase().replace(" ", "-")}`} className="group relative h-24 md:h-32 rounded-xl overflow-hidden">
+            <Link key={idx} to="/gallery" className="group relative h-24 md:h-32 rounded-xl overflow-hidden">
               <img src={collection.image} alt={collection.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
               <div className="absolute bottom-3 left-3"><p className="text-white text-sm font-medium">{collection.name}</p><p className="text-cream/80 text-xs">{collection.count} looks</p></div>

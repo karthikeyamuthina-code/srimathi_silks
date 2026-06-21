@@ -56,10 +56,10 @@ const categoriesData = [
 ];
 
 const featuredCollections = [
-  { name: "Wedding Edit", image: "https://i.pinimg.com/1200x/f0/d6/8e/f0d68e85d2b50bbea5b36c7d2b4e6c5a.jpg", count: 128, link: "/collection/wedding-edit" },
-  { name: "Festival Picks", image: "https://i.pinimg.com/736x/11/29/aa/1129aa16e7e6948af0fd05acd09a7bfb.jpg", count: 96, link: "/collection/festival-picks" },
-  { name: "Party Wear", image: "https://i.pinimg.com/736x/e8/20/a9/e820a91afd4a535ec03afd98bcba8ac0.jpg", count: 84, link: "/collection/party-wear" },
-  { name: "Daily Elegance", image: "https://i.pinimg.com/736x/37/94/de/3794de7578035eb97bba25e5f7345617.jpg", count: 156, link: "/collection/daily-elegance" },
+  { name: "Wedding Edit", image: "https://i.pinimg.com/1200x/f0/d6/8e/f0d68e85d2b50bbea5b36c7d2b4e6c5a.jpg", count: 128, link: "/shop" },
+  { name: "Festival Picks", image: "https://i.pinimg.com/736x/11/29/aa/1129aa16e7e6948af0fd05acd09a7bfb.jpg", count: 96, link: "/shop" },
+  { name: "Party Wear", image: "https://i.pinimg.com/736x/e8/20/a9/e820a91afd4a535ec03afd98bcba8ac0.jpg", count: 84, link: "/shop" },
+  { name: "Daily Elegance", image: "https://i.pinimg.com/736x/37/94/de/3794de7578035eb97bba25e5f7345617.jpg", count: 156, link: "/shop" },
 ];
 
 const trendingNow = [
@@ -70,9 +70,9 @@ const trendingNow = [
 ];
 
 const designerSpotlight = [
-  { name: "Anita Dongre", specialty: "Sustainable Luxury", image: "https://i.pinimg.com/1200x/da/75/a6/da75a6717f998cd4a084eec3d7729c20.jpg", pieces: 45, link: "/designer/anita-dongre" },
-  { name: "Sabyasachi", specialty: "Heritage Couture", image: "https://i.pinimg.com/1200x/b0/d7/77/b0d7776c721f521e450fb6857868a3c0.jpg", pieces: 62, link: "/designer/sabyasachi" },
-  { name: "Manish Malhotra", specialty: "Glamour Wear", image: "https://i.pinimg.com/1200x/01/5e/b9/015eb9963aa81b758bff7519b9fa9082.jpg", pieces: 38, link: "/designer/manish-malhotra" },
+  { name: "Anita Dongre", specialty: "Sustainable Luxury", image: "https://i.pinimg.com/1200x/da/75/a6/da75a6717f998cd4a084eec3d7729c20.jpg", pieces: 45, link: "/shop" },
+  { name: "Sabyasachi", specialty: "Heritage Couture", image: "https://i.pinimg.com/1200x/b0/d7/77/b0d7776c721f521e450fb6857868a3c0.jpg", pieces: 62, link: "/shop" },
+  { name: "Manish Malhotra", specialty: "Glamour Wear", image: "https://i.pinimg.com/1200x/01/5e/b9/015eb9963aa81b758bff7519b9fa9082.jpg", pieces: 38, link: "/shop" },
 ];
 
 const Categories = () => {
@@ -89,7 +89,7 @@ const Categories = () => {
             <span className="text-primary text-xs uppercase tracking-[0.3em] font-semibold">Curated</span>
             <h2 className="font-heading text-2xl md:text-3xl text-stone-800 mt-1">Featured Collections</h2>
           </div>
-          <Link to="/collections" className="group flex items-center gap-2 text-primary text-sm font-semibold hover:text-primary/80 transition-colors">
+          <Link to="/categories" className="group flex items-center gap-2 text-primary text-sm font-semibold hover:text-primary/80 transition-colors">
             View All <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -152,7 +152,7 @@ const Categories = () => {
               <span className="text-primary text-sm uppercase tracking-[0.3em] font-medium flex items-center gap-2"><TrendingUp className="w-4 h-4" />Hot Right Now</span>
               <h3 className="font-heading text-2xl text-stone-800 mt-2">Trending This Week</h3>
             </div>
-            <Link to="/trending" className="text-primary text-sm uppercase tracking-wider hover:underline flex items-center gap-1 font-medium">View All <ArrowRight className="w-3 h-3" /></Link>
+            <Link to="/shop" className="text-primary text-sm uppercase tracking-wider hover:underline flex items-center gap-1 font-medium">View All <ArrowRight className="w-3 h-3" /></Link>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {trendingNow.map((item, idx) => (
@@ -218,7 +218,7 @@ const Categories = () => {
               <div className="text-center bg-white/10 rounded-lg px-4 py-2"><span className="text-white text-xl font-bold">{countdown.hours}</span><span className="text-cream/60 text-xs block">Hours</span></div>
               <div className="text-center bg-white/10 rounded-lg px-4 py-2"><span className="text-white text-xl font-bold">{countdown.mins}</span><span className="text-cream/60 text-xs block">Mins</span></div>
             </div>
-            <Link to="/events" className="bg-primary text-white px-6 py-2.5 rounded-full text-sm uppercase tracking-wider font-medium hover:bg-primary/90 transition-colors flex items-center gap-2 flex-shrink-0">Notify Me<ArrowRight className="w-4 h-4" /></Link>
+            <Link to="/contact" className="bg-primary text-white px-6 py-2.5 rounded-full text-sm uppercase tracking-wider font-medium hover:bg-primary/90 transition-colors flex items-center gap-2 flex-shrink-0">Notify Me<ArrowRight className="w-4 h-4" /></Link>
           </div>
         </div>
       </div>

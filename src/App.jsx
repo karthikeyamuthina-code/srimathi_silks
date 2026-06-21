@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom"; 
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"; 
 import { ShopProvider } from "./ShopContext.jsx";
 
 // --> HEADER, FOOTER AUR COMPONENTS IMPORT <--
@@ -34,7 +34,6 @@ import Register from "./pages/Register.jsx";
 import TrackOrder from "./pages/TrackOrder.jsx";
 import Faq from "./pages/Faq.jsx";
 import Checkout from "./pages/Checkout.jsx";
-import NotFound from "./pages/NotFound.jsx";
 import Profile from "./pages/Profile.jsx";
 
 const App = () => {
@@ -93,9 +92,11 @@ const App = () => {
                 path="/orders" 
                 element={<ProtectedRoute><Profile /></ProtectedRoute>} 
               />
-              
+              <Route path="/custom-stitching" element={<Navigate to="/contact" replace />} />
+              <Route path="/designer/:designerId" element={<Navigate to="/shop" replace />} />
+              <Route path="/collection/:collectionSlug" element={<Navigate to="/gallery" replace />} />
               {/* ⚠️ 404 PAGE - MUST BE LAST */}
-              <Route path="*" element={<NotFound />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </main>
 
