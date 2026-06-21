@@ -197,7 +197,7 @@ const Sarees = () => {
         <div className="flex items-center gap-2 text-xs text-stone-400 mb-4">
           <Link to="/" className="hover:text-primary transition-colors">Home</Link>
           <ChevronRight className="w-3 h-3" />
-          <Link to="/collections" className="hover:text-primary transition-colors">Collections</Link>
+          <Link to="/categories" className="hover:text-primary transition-colors">Collections</Link>
           <ChevronRight className="w-3 h-3" />
           <span className="text-primary font-semibold">Sarees</span>
         </div>

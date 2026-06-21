@@ -245,7 +245,7 @@ const Checkout = () => {
           </Link>
           
           <Link to="/" className="font-heading text-xl font-bold text-stone-800 tracking-widest">
-            LM <span className="text-primary italic">Showroom</span>
+            <span className="text-primary italic">Showroom</span>
           </Link>
           
           <div className="flex items-center gap-2 text-green-600 font-medium">

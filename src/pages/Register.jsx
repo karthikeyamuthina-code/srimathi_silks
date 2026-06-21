@@ -155,7 +155,7 @@ const Register = () => {
         {/* Logo - desktop only */}
         <div className="hidden lg:flex absolute top-10 right-10 z-30">
           <Link to="/" className="font-heading text-3xl font-bold text-white tracking-widest flex items-center gap-2 hover:text-primary transition-colors">
-            LM <span className="text-primary italic">Srimathi Silks </span>
+            <span className="text-primary italic">Srimathi Silks </span>
           </Link>
         </div>
 
@@ -333,7 +333,7 @@ const Register = () => {
                   className="w-3.5 h-3.5 sm:w-4 sm:h-4 mt-0.5 rounded border-stone-300 text-primary focus:ring-primary/20 cursor-pointer" 
                 />
                 <span className="text-[10px] sm:text-xs text-stone-600 group-hover:text-stone-800 transition-colors">
-                  I agree to the <Link to="/terms" className="text-primary hover:underline">Terms & Conditions</Link> and <Link to="/privacy" className="text-primary hover:underline">Privacy Policy</Link>.
+                  I agree to the <Link to="/" className="text-primary hover:underline">Terms & Conditions</Link> and <Link to="/" className="text-primary hover:underline">Privacy Policy</Link>.
                 </span>
               </label>
             </div>
@@ -384,11 +384,11 @@ const Register = () => {
 
           {/* Footer Links */}
           <div className="mt-5 sm:mt-6 flex items-center justify-center gap-3 sm:gap-4 text-[10px] sm:text-xs text-stone-400">
-            <Link to="/privacy" className="hover:text-primary transition-colors">Privacy</Link>
+            <Link to="/faq" className="hover:text-primary transition-colors">Privacy</Link>
             <span className="w-1 h-1 bg-stone-300 rounded-full"></span>
-            <Link to="/terms" className="hover:text-primary transition-colors">Terms</Link>
+            <Link to="/faq" className="hover:text-primary transition-colors">Terms</Link>
             <span className="w-1 h-1 bg-stone-300 rounded-full"></span>
-            <Link to="/help" className="hover:text-primary transition-colors">Help</Link>
+            <Link to="/faq" className="hover:text-primary transition-colors">Help</Link>
           </div>
         </div>
       </div>

@@ -44,24 +44,24 @@ const navLinks = [
           { name: "Sarees", category: "Sarees", path: "/sarees" }, 
           { name: "Kurtas", category: "Kurtas", path: "/kurtas", badge: "Bestseller" }, 
           { name: "Dupattas", category: "Dupattas", path: "/dupattas" }, 
-          { name: "Lehengas", path: "/lehengas", badge: "Premium" }, 
-          { name: "Salwar Suits", path: "/salwar-suits" }, 
-          { name: "Gowns", path: "/gowns" } 
+          { name: "Lehengas", path: "/" , badge: "Premium" }, 
+          { name: "Salwar Suits", path: "/" }, 
+          { name: "Gowns", path: "/" } 
         ] },
         { title: "Men's Wear", links:[ 
           { name: "Kurtas", category: "Kurtas", path: "/kurtas" }, 
-          { name: "Sherwanis", path: "/men/sherwanis", badge: "Wedding" }, 
-          { name: "Ethnic Sets", path: "/men/ethnic-sets" }, 
-          { name: "Jodhpuri", path: "/men/jodhpuri" } 
+          { name: "Sherwanis", path: "/" , badge: "Wedding" }, 
+          { name: "Ethnic Sets", path: "/" }, 
+          { name: "Jodhpuri", path: "/" } 
         ] },
         { title: "Accessories", links:[ 
-          { name: "Jewelry", path: "/jewelry" }, 
-          { name: "Bags", path: "/bags" }, 
-          { name: "Footwear", path: "/footwear" }, 
-          { name: "Stoles", path: "/stoles" } 
+          { name: "Jewelry", path: "/" }, 
+          { name: "Bags", path: "/" }, 
+          { name: "Footwear", path: "/" }, 
+          { name: "Stoles", path: "/" } 
         ] }
       ],
-      featuredImage: { url: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=300&h=400&fit=crop", title: "New Collection 2026", subtitle: "Shop Now", link: "/new-arrivals" }
+      featuredImage: { url: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=300&h=400&fit=crop", title: "New Collection 2026", subtitle: "Shop Now", link: "/" }
     }
   },
   { 
@@ -71,9 +71,9 @@ const navLinks = [
         { title: "Ethnic Wear", links:[ 
           { name: "Sarees", category: "Sarees", path: "/sarees" }, 
           { name: "Kurtas & Kurtis", category: "Kurtas", path: "/kurtas" }, 
-          { name: "Lehengas", path: "/lehengas" }, 
-          { name: "Salwar Kameez", path: "/salwar-kameez" }, 
-          { name: "Anarkali", path: "/anarkali" } 
+          { name: "Lehengas", path: "/" }, 
+          { name: "Salwar Kameez", path: "/" }, 
+          { name: "Anarkali", path: "/" } 
         ] },
         { title: "Fabrics", links:[ 
           { name: "Silk Fabric", category: "Silk", path: "/fabrics", badge: "Premium" }, 
@@ -83,13 +83,13 @@ const navLinks = [
           { name: "Organza", category: "Organza", path: "/fabrics" } 
         ] },
         { title: "Occasion", links:[ 
-          { name: "Wedding", path: "/occasion/wedding" }, 
-          { name: "Festival", path: "/occasion/festival" }, 
-          { name: "Party", path: "/occasion/party" }, 
-          { name: "Casual", path: "/occasion/casual" } 
+          { name: "Wedding", path: "/" }, 
+          { name: "Festival", path: "/" }, 
+          { name: "Party", path: "/" }, 
+          { name: "Casual", path: "/" } 
         ] }
       ],
-      featuredImage: { url: "https://in.kalkifashion.com/cdn/shop/files/250x350-desk-indo-fusion-styles-18-02-26_80a71954-4c84-4afa-bf4d-c8cefa4582bf.jpg?v=1772871706&width=235", title: "Festive Collection", subtitle: "Up to 40% OFF", link: "/festive-collection" }
+      featuredImage: { url: "https://in.kalkifashion.com/cdn/shop/files/250x350-desk-indo-fusion-styles-18-02-26_80a71954-4c84-4afa-bf4d-c8cefa4582bf.jpg?v=1772871706&width=235", title: "Festive Collection", subtitle: "Up to 40% OFF", link: "/" }
     }
   },
   { 
@@ -97,26 +97,26 @@ const navLinks = [
     dropdownContent: {
       columns:[
         { title: "Curated Collections", links:[ 
-          { name: "Editor's Pick", path: "/featured/editors-pick", badge: "⭐ Top" }, 
-          { name: "Bestsellers", path: "/featured/bestsellers" }, 
-          { name: "Trending Now", path: "/featured/trending", badge: "🔥 Hot" }, 
-          { name: "New Arrivals", path: "/featured/new", badge: "✨ New" }, 
-          { name: "Coming Soon", path: "/featured/coming-soon" } 
+          { name: "Editor's Pick", path: "/" , badge: "⭐ Top" }, 
+          { name: "Bestsellers", path: "/" }, 
+          { name: "Trending Now", path: "/" , badge: "🔥 Hot" }, 
+          { name: "New Arrivals", path: "/" , badge: "✨ New" }, 
+          { name: "Coming Soon", path: "/" } 
         ] },
         { title: "Designer Collections", links:[ 
-          { name: "Premium Silk", path: "/collections/premium-silk" }, 
-          { name: "Bridal Edit", path: "/collections/bridal", badge: "👰 Bridal" }, 
-          { name: "Festive Special", path: "/collections/festive" }, 
-          { name: "Summer Collection", path: "/collections/summer" } 
+          { name: "Premium Silk", path: "/" }, 
+          { name: "Bridal Edit", path: "/" , badge: "👰 Bridal" }, 
+          { name: "Festive Special", path: "/" }, 
+          { name: "Summer Collection", path: "/" } 
         ] },
         { title: "Offers", links:[ 
-          { name: "Clearance Sale", path: "/sale/clearance", badge: "🔥 50% OFF" }, 
-          { name: "Buy 1 Get 1", path: "/offers/bogo", badge: "🎁 BOGO" }, 
-          { name: "Combo Offers", path: "/offers/combo" }, 
-          { name: "First Order 30% OFF", path: "/offers/first-order", badge: "🆕 New User" } 
+          { name: "Clearance Sale", path: "/" , badge: "🔥 50% OFF" }, 
+          { name: "Buy 1 Get 1", path: "/" , badge: "🎁 BOGO" }, 
+          { name: "Combo Offers", path: "/" }, 
+          { name: "First Order 30% OFF", path: "/" , badge: "🆕 New User" } 
         ] }
       ],
-      featuredImage: { url: "https://in.kalkifashion.com/cdn/shop/files/250x350-desk-exclusive-collections-23-03-26.jpg?v=1774257770&width=235", title: "Limited Time Offer", subtitle: "Flat 30% OFF", link: "/offers" }
+      featuredImage: { url: "https://in.kalkifashion.com/cdn/shop/files/250x350-desk-exclusive-collections-23-03-26.jpg?v=1774257770&width=235", title: "Limited Time Offer", subtitle: "Flat 30% OFF", link: "/" }
     }
   },
   /* CHANGED: Swapped "Reviews" section with a single flat link pointing to "About Us" */
@@ -130,23 +130,23 @@ const navLinks = [
     dropdownContent: {
       columns:[
         { title: "Collections", links:[ 
-          { name: "Bridal Gallery", path: "/gallery/bridal" }, 
-          { name: "Festive Looks", path: "/gallery/festive" }, 
-          { name: "Casual Styles", path: "/gallery/casual" }, 
-          { name: "Celebrity Looks", path: "/gallery/celebrity", badge: "🌟 Trending" } 
+          { name: "Bridal Gallery", path: "/gallery" }, 
+          { name: "Festive Looks", path: "/gallery" }, 
+          { name: "Casual Styles", path: "/gallery" }, 
+          { name: "Celebrity Looks", path: "/gallery", badge: "🌟 Trending" } 
         ] },
         { title: "Behind the Scenes", links:[ 
-          { name: "Craftsmanship", path: "/gallery/craft" }, 
-          { name: "Fabric Making", path: "/gallery/fabric" }, 
-          { name: "Design Process", path: "/gallery/design" } 
+          { name: "Craftsmanship", path: "/gallery" }, 
+          { name: "Fabric Making", path: "/gallery" }, 
+          { name: "Design Process", path: "/gallery" } 
         ] },
         { title: "Social", links:[ 
-          { name: "Instagram Feed", path: "/gallery/instagram" }, 
-          { name: "Customer Looks", path: "/gallery/customers", badge: "#LMStyle" }, 
-          { name: "Video Gallery", path: "/gallery/videos" } 
+          { name: "Instagram Feed", path: "/gallery" }, 
+          { name: "Customer Looks", path: "/gallery", badge: "#LMStyle" }, 
+          { name: "Video Gallery", path: "/gallery" } 
         ] }
       ],
-      featuredImage: { url: "https://in.kalkifashion.com/cdn/shop/files/bridal-saree-menu.jpg?v=3865592706081764068", title: "Visual Stories", subtitle: "Explore our gallery", link: "/gallery/stories" }
+      featuredImage: { url: "https://in.kalkifashion.com/cdn/shop/files/bridal-saree-menu.jpg?v=3865592706081764068", title: "Visual Stories", subtitle: "Explore our gallery", link: "/gallery" }
     }
   }
 ];
@@ -234,7 +234,7 @@ const Navbar = () => {
     if (lowerTerm.includes("saree")) navigate("/sarees");
     else if (lowerTerm.includes("kurta")) navigate("/kurtas");
     else if (lowerTerm.includes("dupatta")) navigate("/dupattas");
-    else if (lowerTerm.includes("lehenga")) navigate("/lehengas");
+    else if (lowerTerm.includes("lehenga")) navigate("/");
     else navigate(`/shop`); 
   };
 
@@ -275,7 +275,7 @@ const Navbar = () => {
               </div>
               <div className="hidden md:flex items-center gap-6 text-xs">
                 <Link to="/track-order" className="flex items-center gap-1.5 hover:text-white/80 transition-colors">Track Order</Link>
-                <Link to="/store-locator" className="flex items-center gap-1.5 hover:text-white/80 transition-colors">Store Locator</Link>
+                <Link to="/contact" className="flex items-center gap-1.5 hover:text-white/80 transition-colors">Store Locator</Link>
               </div>
             </div>
           </div>

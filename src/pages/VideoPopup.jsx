@@ -249,7 +249,7 @@ const VideoPopup = () => {
 
             <div className="absolute top-6 left-6 z-20">
               <span className="font-heading text-2xl font-bold text-white tracking-wider">
-                LM <span className="text-primary italic">Srimathi Silks </span>
+                <span className="text-primary italic">Srimathi Silks </span>
               </span>
             </div>
           </div>

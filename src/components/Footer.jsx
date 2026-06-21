@@ -81,7 +81,7 @@ const Footer = () => (
               <Instagram className="w-4 h-4" />
             </a>
             {/* Facebook */}
-            <a href="https://www.facebook.com/LMSrimathi Silksatnellore/" target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
+            <a href="https://www.facebook.com/LSrimathi Silksatnellore/" target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
               <Facebook className="w-4 h-4" />
             </a>
             {/* Youtube */}

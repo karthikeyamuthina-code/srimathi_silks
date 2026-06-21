@@ -347,7 +347,7 @@ const Reviews = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                to="/write-review"
+                to="/reviews"
                 className="bg-primary text-white px-8 py-3.5 rounded-full font-medium hover:bg-primary/90 transition flex items-center gap-2 shadow-lg shadow-primary/20"
               >
                 <Star className="w-4 h-4" />

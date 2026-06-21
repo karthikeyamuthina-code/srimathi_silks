@@ -86,7 +86,7 @@ const Contact = () => {
 
   // Social links
   const socialLinks = [
-    { icon: Facebook, link: "https://www.facebook.com/LMSrimathi Silksatnellore/", color: "bg-[#1877F2] hover:bg-[#1877F2]/90" },
+    { icon: Facebook, link: "https://www.facebook.com/Srimathi Silksatnellore/", color: "bg-[#1877F2] hover:bg-[#1877F2]/90" },
     { icon: Instagram, link: "https://instagram.com/Srimathi Silks", color: "bg-gradient-to-br from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700" },
     { icon: Twitter, link: "https://twitter.com/Srimathi Silks", color: "bg-[#1DA1F2] hover:bg-[#1DA1F2]/90" },
     { icon: Youtube, link: "https://youtube.com/Srimathi Silks", color: "bg-[#FF0000] hover:bg-[#FF0000]/90" },
@@ -484,7 +484,7 @@ const Contact = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto text-center">
           <span className="text-primary text-sm uppercase tracking-[0.3em] font-medium">Why Choose Srimathi Silks</span>
-          <h3 className="font-heading text-2xl md:text-3xl text-stone-800 mt-2 mb-8">The LM Experience</h3>
+          <h3 className="font-heading text-2xl md:text-3xl text-stone-800 mt-2 mb-8">The  Experience</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[

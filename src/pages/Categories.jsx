@@ -194,7 +194,7 @@ const Categories = () => {
       {/* WHY SHOP WITH US */}
       <div className="bg-gradient-to-r from-stone-100 to-stone-50 py-8">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-6"><h3 className="font-heading text-2xl text-stone-800">The LM Experience</h3><p className="text-stone-600 mt-2">Crafting elegance since 2024</p></div>
+          <div className="text-center mb-6"><h3 className="font-heading text-2xl text-stone-800">The Experience</h3><p className="text-stone-600 mt-2">Crafting elegance since 2024</p></div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
             {[
               { icon: Gem, title: "Premium Quality", desc: "Handpicked fabrics & craftsmanship" },

@@ -222,7 +222,7 @@ const SignIn = () => {
 
         <div className="hidden lg:flex absolute top-10 left-10 z-30">
           <Link to="/" className="font-heading text-3xl font-bold text-white tracking-widest flex items-center gap-2 hover:text-primary transition-colors">
-            LM <span className="text-primary italic">Srimathi Silks </span>
+            <span className="text-primary italic">Srimathi Silks </span>
           </Link>
         </div>
 
@@ -297,7 +297,7 @@ const SignIn = () => {
                   <label className="font-body text-xs sm:text-sm font-medium text-stone-700 flex items-center gap-1.5 sm:gap-2">
                     <Lock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-stone-400" />Password
                   </label>
-                  <Link to="/forgot-password" className="font-body text-[10px] sm:text-xs text-primary hover:text-primary/80 transition-colors">
+                  <Link to="/account" className="font-body text-[10px] sm:text-xs text-primary hover:text-primary/80 transition-colors">
                     Forgot Password?
                   </Link>
                 </div>
@@ -430,11 +430,11 @@ const SignIn = () => {
           </div>
 
           <div className="mt-5 sm:mt-6 flex items-center justify-center gap-3 sm:gap-4 text-[10px] sm:text-xs text-stone-400">
-            <Link to="/privacy" className="hover:text-primary transition-colors">Privacy</Link>
+            <Link to="/faq" className="hover:text-primary transition-colors">Privacy</Link>
             <span className="w-1 h-1 bg-stone-300 rounded-full"></span>
-            <Link to="/terms" className="hover:text-primary transition-colors">Terms</Link>
+            <Link to="/faq" className="hover:text-primary transition-colors">Terms</Link>
             <span className="w-1 h-1 bg-stone-300 rounded-full"></span>
-            <Link to="/help" className="hover:text-primary transition-colors">Help</Link>
+            <Link to="/faq" className="hover:text-primary transition-colors">Help</Link>
           </div>
         </div>
       </div>
